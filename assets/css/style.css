@@ -54,6 +54,10 @@ a {
 }
 
 /* ---------- Header --------- */
+.header {
+    background: #efefef;
+}
+
 .header--sticky {
     position: sticky;
     top: -16px;
@@ -68,13 +72,14 @@ a {
 
 .navbar__list {
     display: flex;
-    gap: 38px;
-    margin-left: 350px;
+    gap: 20px;
+    margin-left: 406px;
 }
 
 .navbar__link {
     position: relative;
     padding: 8px 10px;
+    font-family: "Public Sans", sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.56;
@@ -94,7 +99,7 @@ a {
     content: "";
     display: inline-block;
     width: 16px;
-    height: 2px;
+    height: 1.5px;
     right: 10px;
     left: 10px;
     bottom: -25px;
@@ -103,4 +108,170 @@ a {
 
 .header-action__cta {
     margin-left: auto;
+}
+
+/* ---------- Hero ---------- */
+.hero__inner {
+    display: flex;
+    margin-top: 60px;
+}
+
+.hero__line {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #d5d5d500 0,
+        #dddcdc 50%,
+        #d5d5d500 100%
+    );
+}
+
+.hero__content {
+    margin-right: 76px;
+}
+
+.hero__heading {
+    margin-top: 43px;
+    width: 368px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #152427;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 341px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+}
+
+.hero__cta {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 42px;
+}
+
+.hero__btn {
+    padding: 0 30px;
+}
+
+.hero__watch-video {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.hero__watch-video:hover .hero__play-cirlce-border {
+    border-color: #83a17d;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(225deg);
+}
+
+.hero__watch-video:hover .hero__play-icon {
+    background: #143c3c;
+    transform: rotate(135deg);
+}
+
+.hero__watch-video:hover .hero__cta-title {
+    color: #83a17d;
+}
+
+.hero__play-cirlce-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    height: 57px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transition-duration: 0.3s;
+}
+
+.hero__play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 43px;
+    border-radius: 50%;
+    background: #83a17d;
+    transform: rotate(75deg);
+}
+
+.hero__cta-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #152427;
+}
+
+.hero__blur {
+    position: absolute;
+    top: 280px;
+    right: 390px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: #4dbb9a;
+    filter: blur(137px);
+}
+
+.hero__images {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__img {
+    position: relative;
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+}
+
+.hero__img:nth-child(2) {
+    top: 77px;
+}
+
+.hero__decor {
+    position: absolute;
+    left: 440px;
+    top: 134px;
+}
+
+.hero__decor:last-child {
+    top: 390px;
+    left: 710px;
+    transform: rotate(180deg);
+}
+
+/* -------- Clients --------- */
+.clients {
+    margin-top: 207px;
+}
+
+.clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 85px 122px;
+    background: #e2eddf;
+    border-radius: 9999px;
+}
+
+.clients__icon {
+    margin-right: 11px;
 }
