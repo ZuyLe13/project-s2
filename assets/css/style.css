@@ -396,6 +396,10 @@ a {
     cursor: pointer;
 }
 
+.service-item:hover .service-item__content {
+    padding-left: 18px;
+}
+
 .service-item__img-bg {
     overflow: hidden;
 }
@@ -410,7 +414,8 @@ a {
 }
 
 .service-item__content {
-    padding: 24px 84px 24px 18px;
+    padding: 24px 84px 24px 0;
+    transition: all 0.25s ease;
 }
 
 .service-item__title {
